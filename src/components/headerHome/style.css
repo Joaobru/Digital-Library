@@ -1,0 +1,7 @@
+
+.IconsAndTitle{
+  display: flex;
+  justify-content: space-between;
+  background-color: #7959c1;
+  position: fixed;
+}
