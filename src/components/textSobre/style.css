@@ -1,0 +1,10 @@
+.textSobre{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width:60%;
+}
+.textSobre p {
+  text-align: justify;
+  font-size: 14pt;
+}

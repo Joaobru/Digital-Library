@@ -3,3 +3,7 @@
   justify-content: space-between;
   background-color: #7959c1;
 }
+a {
+  text-decoration: none;
+  color: #222831;
+}
