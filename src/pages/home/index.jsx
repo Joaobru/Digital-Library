@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 import HeaderHome from "../../components/headerHome";
+import BreadCrumb from "../../components/breadCrumbs";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import MobileStepper from "@material-ui/core/MobileStepper";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import SwipeableViews from "react-swipeable-views";
@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
   header: {
     display: "flex",
     alignItems: "center",
-    height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
     boxShadow: "2px 2px 2px rgba(0,0,0,0.4)",
@@ -72,8 +71,9 @@ function Home() {
 
   return (
     <>
+      <HeaderHome />
       <div className="Body">
-        <HeaderHome />
+        <BreadCrumb />
         <div className={classes.root}>
           <Paper square elevation={0} className={classes.header}>
             <Typography>{tutorialSteps[activeStep].label}</Typography>
@@ -97,6 +97,12 @@ function Home() {
             ))}
           </AutoPlaySwipeableViews>
         </div>
+
+        {/* ITEMS DE HOME */}
+
+        {/* LIVROS DE AVENTURA */}
+
+        <h1 className="">Aventura</h1>
       </div>
     </>
   );
