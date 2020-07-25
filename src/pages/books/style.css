@@ -1,0 +1,20 @@
+.Title {
+  font-size: 18pt;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.TitleFilter{
+  font-size:18pt;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.Filter{
+  padding: 5px;
+  margin-left: 5%;
+  width: 15%;
+  font-size: 12pt;
+  margin-top:1.5%;
+}
+.Filter option{
+  padding: 5px;
+}

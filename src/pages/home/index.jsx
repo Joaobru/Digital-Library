@@ -99,7 +99,11 @@ function Home() {
 
         {/* LIVROS DE AVENTURA */}
 
-        <h1 className="Title">Livros</h1>
+        <h1 className="Title">Destaques</h1>
+        <Slider />
+        <h1 className="Title">Livros Gratis</h1>
+        <Slider />
+        <h1 className="Title">Livros Populares</h1>
         <Slider />
       </div>
     </>
