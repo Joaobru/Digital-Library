@@ -1,15 +1,17 @@
 import React from "react";
-import "./style.css";
 import HeaderHome from "../../components/headerHome";
 import BreadCrumb from "../../components/breadCrumbs";
+import Slider from "../../components/Slider";
+
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import "./style.css";
 
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -103,7 +105,8 @@ function Home() {
 
         {/* LIVROS DE AVENTURA */}
 
-        <h1 className="Title">Aventura</h1>
+        <h1 className="Title">Livros</h1>
+        <Slider />
       </div>
     </>
   );
