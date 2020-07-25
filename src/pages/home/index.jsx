@@ -74,6 +74,7 @@ function Home() {
       <div className="Body">
         <HeaderHome />
         <div className={classes.root}>
+          <BreadCrumb />
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
             index={activeStep}
@@ -93,7 +94,6 @@ function Home() {
             ))}
           </AutoPlaySwipeableViews>
         </div>
-        <BreadCrumb />
 
         {/* ITEMS DE HOME */}
 

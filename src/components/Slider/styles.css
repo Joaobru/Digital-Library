@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin-top: 50px;
+  overflow: hidden;
 }
 
 .item {
@@ -40,10 +40,6 @@
 .container .item:hover {
   transform: scale(1.5);
   z-index: 1;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 .item img {
