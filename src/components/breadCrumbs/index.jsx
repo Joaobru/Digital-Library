@@ -7,7 +7,7 @@ function BreadCrumb() {
   return (
       <nav className="NavList">
           <span className="StyledList">
-            <Link to="/">
+            <Link to="/home">
               Home
             </Link>
           </span>

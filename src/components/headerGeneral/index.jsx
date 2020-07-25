@@ -103,7 +103,7 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <Link to="logout"><MenuItem onClick={handleMenuClose}>Logout</MenuItem></Link>
+      <Link to="/"><MenuItem onClick={handleMenuClose}>Logout</MenuItem></Link>
     </Menu>
   );
 

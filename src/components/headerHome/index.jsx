@@ -69,7 +69,7 @@ function Header() {
                 open={open}
                 onClose={handleClose}
               >
-                <Link to="logout"><MenuItem onClick={handleClose}>Logout</MenuItem></Link>
+                <Link to="/"><MenuItem onClick={handleClose}>Logout</MenuItem></Link>
               </Menu>
             </div>
           )}
