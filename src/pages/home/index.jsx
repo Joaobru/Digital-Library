@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   header: {
     display: "flex",
     alignItems: "center",
+    height: 50,
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
     boxShadow: "2px 2px 2px rgba(0,0,0,0.4)",
@@ -71,9 +72,8 @@ function Home() {
 
   return (
     <>
-      <HeaderHome />
       <div className="Body">
-        <BreadCrumb />
+        <HeaderHome />
         <div className={classes.root}>
           <Paper square elevation={0} className={classes.header}>
             <Typography>{tutorialSteps[activeStep].label}</Typography>
@@ -97,12 +97,13 @@ function Home() {
             ))}
           </AutoPlaySwipeableViews>
         </div>
+        <BreadCrumb />
 
         {/* ITEMS DE HOME */}
 
         {/* LIVROS DE AVENTURA */}
 
-        <h1 className="">Aventura</h1>
+        <h1 className="Title">Aventura</h1>
       </div>
     </>
   );
