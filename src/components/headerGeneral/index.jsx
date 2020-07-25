@@ -7,10 +7,11 @@ import IconButton from '@material-ui/core/IconButton';
 import InputBase from '@material-ui/core/InputBase';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
+import {FiShoppingCart} from 'react-icons/fi'
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -102,8 +103,7 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <Link to="/"><MenuItem onClick={handleMenuClose}>Logout</MenuItem></Link>
     </Menu>
   );
 
@@ -142,7 +142,7 @@ export default function Header() {
             color="inherit"
             aria-label="open drawer"
           >
-            <MenuIcon />
+            <FiShoppingCart />
           </IconButton>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

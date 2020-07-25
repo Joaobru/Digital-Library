@@ -1,0 +1,16 @@
+.photos{
+  display: flex;
+  width:60%;
+  margin: 0 auto;
+  margin-top:5.5%;
+}
+
+.photos img{
+  border-radius:150%;
+  padding: 1%;
+  transition:0.5s;
+  width:18%;
+}
+.photos img:hover{
+  filter: brightness(90%);
+}

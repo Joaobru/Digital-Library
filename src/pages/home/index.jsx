@@ -4,8 +4,6 @@ import BreadCrumb from "../../components/breadCrumbs";
 import Slider from "../../components/Slider";
 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 
@@ -27,8 +25,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "2px 2px 2px rgba(0,0,0,0.4)",
   },
   img: {
-    height: "20%",
-    marginLeft: "1%",
+    height: "18%",
     display: "block",
     overflow: "hidden",
     width: "98%",
@@ -77,9 +74,6 @@ function Home() {
       <div className="Body">
         <HeaderHome />
         <div className={classes.root}>
-          <Paper square elevation={0} className={classes.header}>
-            <Typography>{tutorialSteps[activeStep].label}</Typography>
-          </Paper>
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
             index={activeStep}

@@ -1,0 +1,32 @@
+
+.logout{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+.Body-logout h1{
+  color: white;
+}
+.Body-logout button{
+  margin-top:2%;
+}
+.Form{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:290px;
+}
+.Form label{
+  color:white;
+  text-align: center;
+  margin-top: 1%;
+  font-size: 14pt;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Form input{
+  width:80%;
+  margin-top: 1%;
+  padding: 5px 12px;
+  margin:0 auto;
+}

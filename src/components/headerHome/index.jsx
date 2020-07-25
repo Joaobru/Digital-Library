@@ -9,6 +9,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import {FiShoppingCart} from 'react-icons/fi';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -36,10 +38,10 @@ function Header() {
       <AppBar className="NavBar">
         <Toolbar className="IconsAndTitle">
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="open drawer">
-            <MenuIcon />
+            <FiShoppingCart/>
           </IconButton>
           <Typography variant="h5" className="title">
-            Digital Library
+            Di Quebrada
           </Typography>
           {auth && (
             <div>
@@ -67,8 +69,7 @@ function Header() {
                 open={open}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <Link to="/"><MenuItem onClick={handleClose}>Logout</MenuItem></Link>
               </Menu>
             </div>
           )}
