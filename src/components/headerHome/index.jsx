@@ -41,7 +41,7 @@ function Header() {
             <FiShoppingCart/>
           </IconButton>
           <Typography variant="h5" className="title">
-            Di Quebrada
+            Digital Library
           </Typography>
           {auth && (
             <div>
